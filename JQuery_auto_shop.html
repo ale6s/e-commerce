@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Auto Shop - Used Cars</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+	<!-- Include JQuery library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link type="text/stylesheet" href="style.css">
+	<!-- Include external js file (JQuery_auto_shop.js) here -->
+	<script src="JQuery_auto_shop.js"></script>
+</head>
+
+<body class='container'>
+	<img class="image-cover" src="summer-cars.png" alt="cover">
+		
+	<div class='col-md-9'>
+		<h2 class="text-primary font-weight-bold">Choose a car type </h2>
+		<!--drop down list -->
+		<select id="categorySelect" name="categorySelect" class="custom-select" style="width: 50%;">
+			<option value='null'>Loading....</option>
+		</select>
+	</div>
+	<div class="row">
+		<div class='col-md-8'>
+			<h2  class="text-primary  font-weight-bold">Car List</h2> <!-- car list -->
+			<table class='table' id='car-list'>
+				<thead class="black white-text">
+					<!--car list table header -->
+					<tr class='clm-label'>
+						<th class='clm-label font-weight-bold'>ID</th>
+						<th class='clm-label font-weight-bold'>Make</th>
+						<th class='clm-label font-weight-bold'>Model</th>
+						<th class='clm-label font-weight-bold'>Year</th>
+						<th class='clm-label font-weight-bold'>Type</th>
+						<th class='clm-label font-weight-bold'>Color</th>
+						<th class='clm-label font-weight-bold'>Price</th>
+						<th class='clm-label font-weight-bold'>Mileage</th>
+						<th class='clm-label font-weight-bold'>Select</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--car list table body -->
+				</tbody>
+			</table>
+		</div>
+		<div class='col-md-4'>
+			<h2 class="text-primary font-weight-bold">Shopping Cart</h2>
+			<div class="font-weight-bold">You have <span id="items">0</span> items in your Shopping Cart</div>
+			<table class='table' id='mycart'>
+				<!--Shopping Cart list table -->
+				<thead class="black white-text">
+					<!--table header -->
+					<tr>
+						<th class='clm-label font-weight-bold'>ID</th>
+						<th class='clm-label font-weight-bold'>Make</th>
+						<th class='clm-label font-weight-bold'>Model</th>
+						<th class='clm-label font-weight-bold'>Price</th>
+						<th class='clm-label font-weight-bold'>Quantity</th>
+						<th class='clm-label font-weight-bold'>Type</th>
+						<th class='clm-label font-weight-bold'></th>
+					</tr>
+				</thead>
+				<tbody id='item-list'>
+					<!--table body -->
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+
+
+	<div class='col-md-9'>
+		<h2 class="text-primary font-weight-bold">Check Out</h2>
+		<table class='table'>
+			<!--Check Out table -->
+			<tr>
+				<th class='col-xs-4 font-weight-bold'>Subtotal: </th>
+				<td class='col-xs-2 font-weight-bold' id='sub-total'>0</td>
+			</tr>
+			<tr>
+				<th class='col-xs-4 font-weight-bold'>Taxes (6%): </th>
+				<td class='col-xs-2 font-weight-bold ' id='taxes'>0</td>
+			</tr>
+			<tr>
+				<th class='col-xs-4 font-weight-bold'>Registration fee (5%): </th>
+				<td class='col-xs-2 font-weight-bold ' id='registration'>0</td>
+			</tr>
+			<tr>
+				<th class='col-xs-4 font-weight-bold'>Total due: </th>
+				<td class='col-xs-2 font-weight-bold' id='total'>0</td>
+			</tr>
+		</table>
+			<button class="btn btn-warning mb-5 p-0" style="border-radius: 50px;"><img style="width: 180px;" src="https://www.braintreepayments.com/images/features/paypal/paypal-button@2x.png" alt=""></button>
+	</div>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/js/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+td {
+    padding: 5px;
+    margin: 5px;
+}
+
+.addme {
+    height: 28px;
+    width: 80px;
+    padding: 0;
+}
+
+.clm-label {
+    background: #333;
+    color: #fff;
+}
+.image-cover{
+    height: 200px;
+}
