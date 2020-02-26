@@ -10,9 +10,9 @@ Press Finish<br>
 Enjoy
 
 ## Features
--Add item to cart<br>
--Remove From Cart<br>
--Display Total price
+- Add item to cart<br>
+- Remove From Cart<br>
+- Display Total price
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
