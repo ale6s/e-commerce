@@ -4,8 +4,7 @@
 
 ## Installation
 Extract the zip file<br>
-Upload your store logo<br>
-Enter your store details<br>
+open index.html file<br>
 Press Finish<br>
 Enjoy
 
